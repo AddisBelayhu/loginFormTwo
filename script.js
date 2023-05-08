@@ -9,9 +9,23 @@ form.addEventListener('submit', function(event) {
     const password = document.getElementById('password').value;
   
     // TODO: Add login logic here
-  
-    // Reset the form
-    form.reset();
-  });
+    function loginPage(form) {
+        if (form.username.value=="addis" && form.password.value=="moa") { 
 
+               alert("Incorrect detail Password")
+        }              
+        
+        else {
+                 alert("Incorrect detail Username")
+        }
+    }
+
+});
+    
+   
+
+    
   
+
+
+
