@@ -9,17 +9,17 @@ form.addEventListener('submit', function(event) {
     const password = document.getElementById('password').value;
   
     // TODO: Add login logic here
-    function loginPage(form) {
-        if (form.username.value=="addis" && form.password.value=="moa") { 
-
-               alert("Incorrect detail Password")
-        }              
-        
-        else {
-                 alert("Incorrect detail Username")
+    
+        if (username == "addis" && password == "moa") { 
+            alert("login successully");
+            location="mainpage.html";
+        } else {
+               alert("Incorrect detail Username");
+               
         }
-    }
-
+        
+    // Reset form
+    form.reset();
 });
     
    
